@@ -1,18 +1,21 @@
 @import reset
 
-::selection
-    color: #ffffff
-    background-color: #000000
+// ::selection
+    // color: #ffffff
+    // background-color: #000000
+
 body
-    font-family: "Lucida Console", Monaco, monospace
+    -WEBKIT-FONT-SMOOTHING: NONE
+            FONT-SMOOTHING: NONE
+    font-family: Courier
     background-color: #FFF
-    padding: 40px    
+    padding: 30px    
 
 
     .intro
         font-size: 24px
         color: #000000
-        line-height: 40px
+        line-height: 30px
 
     .links
         padding-top: 40px
@@ -22,12 +25,12 @@ body
         a
             text-decoration: none
             background-repeat: no-repeat
-            background-size: 30px
+            background-size: 20px
             background-position-y: center
-            height: 50px
-            line-height: 50px
+            height: 40px
+            line-height: 40px
             display: block
-            padding-left: 50px
+            padding-left: 30px
 
         a:hover
             text-decoration: underline
@@ -55,4 +58,7 @@ body
             color: #807F80
             background-image: url("../img/ama.jpg")
 
-
+    .badges
+        margin-top: 100px
+        img
+            margin: 5px
