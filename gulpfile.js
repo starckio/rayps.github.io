@@ -43,7 +43,7 @@ gulp.task('sass', function() {
             sourceComments: 'normal',
             outputStyle: 'compressed'
         }))
-        .pipe(autoprefixer('last 5 versions'))
+        .pipe(autoprefixer('last 10 versions'))
         .pipe(gulp.dest('css/'))
         .pipe(browserSync.reload({
             stream: true
