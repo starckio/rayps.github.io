@@ -7,6 +7,8 @@ chinese = navigator.language.toLowerCase().indexOf('zh') > -1
 weibo = document.getElementsByClassName('weibo')[0]
 email = document.getElementsByClassName('email')[0]
 
+owdw = window.document.width
+woah = document.getElementsByClassName('woah')[0]
 
 weibo.style.display = 'none' unless chinese
 
@@ -24,3 +26,12 @@ email.onclick = ->
 
     location.href = "mailto:ray@rayps.com" if mobile
     return
+
+
+
+
+window.onresize = ->
+  nwdw = window.document.width
+
+  if nwdw-owdw > 100 or owdw-nwdw > 100
+    woah.style.display = "inline-block"
