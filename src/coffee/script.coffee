@@ -7,7 +7,7 @@ chinese = navigator.language.toLowerCase().indexOf('zh') > -1
 weibo = document.getElementsByClassName('weibo')[0]
 email = document.getElementsByClassName('email')[0]
 
-owdw = window.document.width
+ow = window.innerWidth
 woah = document.getElementsByClassName('woah')[0]
 
 weibo.style.display = 'none' unless chinese
@@ -31,7 +31,9 @@ email.onclick = ->
 
 
 window.onresize = ->
-  nwdw = window.document.width
+  nw = window.innerWidth
 
-  if nwdw-owdw > 100 or owdw-nwdw > 100
+  if nw-ow > 100 or ow-nw > 100
     woah.style.display = "inline-block"
+
+  return

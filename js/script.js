@@ -1,4 +1,4 @@
-var chinese, email, mobile, owdw, ua, weibo, woah;
+var chinese, email, mobile, ow, ua, weibo, woah;
 
 ua = navigator.userAgent;
 
@@ -10,7 +10,7 @@ weibo = document.getElementsByClassName('weibo')[0];
 
 email = document.getElementsByClassName('email')[0];
 
-owdw = window.document.width;
+ow = window.innerWidth;
 
 woah = document.getElementsByClassName('woah')[0];
 
@@ -37,9 +37,9 @@ email.onclick = function() {
 };
 
 window.onresize = function() {
-  var nwdw;
-  nwdw = window.document.width;
-  if (nwdw - owdw > 100 || owdw - nwdw > 100) {
-    return woah.style.display = "inline-block";
+  var nw;
+  nw = window.innerWidth;
+  if (nw - ow > 100 || ow - nw > 100) {
+    woah.style.display = "inline-block";
   }
 };
