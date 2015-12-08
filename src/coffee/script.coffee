@@ -34,6 +34,6 @@ window.onresize = ->
   nw = window.innerWidth
 
   if nw-ow > 100 or ow-nw > 100
-    woah.style.display = "inline-block"
+    woah.style.color = "black"
 
   return

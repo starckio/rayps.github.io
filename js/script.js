@@ -40,6 +40,6 @@ window.onresize = function() {
   var nw;
   nw = window.innerWidth;
   if (nw - ow > 100 || ow - nw > 100) {
-    woah.style.display = "inline-block";
+    woah.style.color = "black";
   }
 };
